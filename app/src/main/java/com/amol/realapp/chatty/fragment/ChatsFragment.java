@@ -101,7 +101,6 @@ public class ChatsFragment extends Fragment {
         });
     adapter = new userAdapter(getActivity(), users);
     chatsList.setAdapter(adapter);
-
     UserStatusList = new ArrayList<>();
 
     FirebaseDatabase.getInstance()
