@@ -19,3 +19,4 @@
 - [ ] send and recieve notifications after sending messages
 - [x] Image Editing Feature
 - [ ] Settings Activity
+- [ ] Lint Check with no errors
