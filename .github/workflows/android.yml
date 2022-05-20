@@ -23,11 +23,16 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
-    - name: Assemble Debug APK
-      run: ./gradlew build
+    - name: Build debug apk
+      uses: eskatos/gradle-command-action@v1
+      with:
+        arguments: :app:clean :app:build
+        distributions-cache-enabled: true
+        dependencies-cache-enabled: true
+        configuration-cache-enabled: true
 
     - name: Upload Debug APK
       uses: actions/upload-artifact@v1
       with:
-        name: app-debug
+        name: apk-debug
         path: app/build/outputs/apk/debug/app-debug.apk
