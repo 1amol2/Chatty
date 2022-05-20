@@ -100,9 +100,9 @@ public class ChatsFragment extends Fragment {
           public void onCancelled(DatabaseError p1) {}
         });
     adapter = new userAdapter(getActivity(), users);
+    chatsList.setHasFixedSize(true);
     chatsList.setAdapter(adapter);
     UserStatusList = new ArrayList<>();
-
     FirebaseDatabase.getInstance()
         .getReference()
         .child("Stories")
