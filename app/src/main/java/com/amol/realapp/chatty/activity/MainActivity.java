@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
         });
     btmNavView.setOnItemReselectedListener(
     	p1 -> {
-            
+            // Do Nothing
             
             }
     );   
