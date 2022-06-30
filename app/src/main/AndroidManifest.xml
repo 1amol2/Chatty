@@ -65,6 +65,10 @@
             android:exported="true"
             android:launchMode="singleTop" />
         <activity
+            android:name=".activity.SettingsActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
             android:name=".activity.GroupChatActivity"
             android:exported="true"
             android:launchMode="singleTop" />
