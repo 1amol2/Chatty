@@ -48,8 +48,8 @@ public class userAdapter extends RecyclerView.Adapter<userAdapter.userItemHolder
   }
 
   @Override
-  public void onBindViewHolder(final userAdapter.userItemHolder p1, int p2) {
-    final userProfile user = users.get(p2);
+  public void onBindViewHolder(userAdapter.userItemHolder p1, int p2) {
+    userProfile user = users.get(p2);
 
     String senderId = FirebaseAuth.getInstance().getUid();
     String senderRoom = senderId + user.getUid();

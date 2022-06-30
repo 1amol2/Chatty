@@ -101,7 +101,7 @@
                 android:paddingRight="6dp"
                 android:text="12:03pm"
                 android:textColor="@color/white" />
-        </LinearLayout>
+        </LinearLayout> 
     </LinearLayout>
 
 </LinearLayout>
