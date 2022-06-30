@@ -64,6 +64,10 @@ public class MainActivity extends AppCompatActivity {
   private Intent resultIntent;
   private String status_fileString;
 
+  private ChatsFragment chatFragment= new ChatsFragment();
+  private GroupsFragment groupFragment= new GroupsFragment();
+  
+  
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     LogSender.startLogging(this);
@@ -78,12 +82,12 @@ public class MainActivity extends AppCompatActivity {
     auth = FirebaseAuth.getInstance();
     tBar = binding.toolbar;
     btmNavView = binding.mainBottomNavigationView;
-
     setSupportActionBar(tBar);
     fragmentManager = getSupportFragmentManager();
   }
 
   private void initListener() {
+      
     btmNavView.setOnItemSelectedListener(
         p1 -> {
           Fragment fragment = null;
@@ -107,7 +111,12 @@ public class MainActivity extends AppCompatActivity {
 
           return true;
         });
-
+    btmNavView.setOnItemReselectedListener(
+    	p1 -> {
+            // Do Nothing
+            
+            }
+    );   
     btmNavView.setSelectedItemId(R.id.chats);
     FirebaseDatabase.getInstance()
         .getReference()
