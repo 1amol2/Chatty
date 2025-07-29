@@ -13,19 +13,10 @@
           "package_name": "com.amol.realapp.chatty"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "367517042902-ddfepm2q1jfvtevsc512oehs7eaee979.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.amol.realapp.chatty",
-            "certificate_hash": "efc9bec949d4521234f9a5a4cf8afb11b0844591"
-          }
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCAexbt0ScVq-47l3yC0Qthk6TvvqnUbtw"
+          "current_key": "AIzaSyDL73DLcc39Iny3XpFwrL8crAXZCbSPfaA"
         }
       ],
       "services": {
